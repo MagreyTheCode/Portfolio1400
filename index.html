@@ -3,133 +3,412 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Favicon Here-->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/normalice.css">
-    
-
-
-
-<title>Adrián Salvador Ekomo | Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Portfolio</title>
+	<!--<link rel="stylesheet" type="text/css" href="./css/normalice.css">-->
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-	<header class="hero">
-		<nav class="nav container">
-		<div class="nav__logo">
-			<h2 class="nav__title">Adrián Salvador Ekomo</h2>
-		</div>
-		<ul class="nav__link 
-		nav__link--Menu ">
-			<li class="nav__items">
-				<a href="#" class="nav__links">Home</a>
-			</li>
-			<li class="nav__items">
-				<a href="#" class="nav__links">About</a>
-			</li>
-			<li class="nav__items">
-				<a href="#" class="nav__links">Contact</a>
-			</li>
-			<li class="nav__items">
-				<a href="#" class="nav__links">Blog</a>
-			</li>
-			<img src="./images/exit.svg" class="nav__close" alt="">
-		</ul>
-			<div class="nav__menu">
-				<img src="./images/Menu.svg" class="nav__img" alt="">
-			</div>
-		</nav>
-		<section class="hero__container container">
-			<h1 class="hero__tittle">Designer, Frontent Developer</h1>
-			<p class="hero_paragraph">My passion lies in creating elegantly simple designs and coding them to perfection. I genuinely enjoy every aspect of my work.</p>
-			<a href="" class="cta">Get started</a>
-		</section>
-	</header>
-	<main>
-		<section class="container about">
-			<h2 class="subtitle">Hi, I’m Adrián. Nice to meet you.</h2>
-			<p class="about__paragraph">Being a passionate beginner in web development and with only a few years in the field, I have been involved in remote projects that any technology aficionado would find exciting. As I navigate lines of code, my confidence grows and my curiosity drives me to explore new technologies, as if they were hidden treasures in a virtual world. Every day I face challenges that feel like video game challenges, allowing me to gradually move towards mastery in this exciting journey.</p>
-			<div class="about__main">
-				<article class="about__icons">
-					<img src="./images/info+.svg" class="about__icon" alt="">
-					<h3 class="about__tittle">Designer</h3>
-					<p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-					<p class="melted">Things I enjoy designing:</p>
-					<p>UX,UI,Web,Logos</p>
-					<p class="melted">Design Tools:</p>
-					<ul>
-						<li class="About__items">Photoshop</li>
-						<li class="About__items">Adobe Ilustrator</li>
-						<li class="About__items">Figma</li>
-						<li class="About__items">Blender</li>
-					</ul>
-				</article>
-				<article class="about__icons">
-					<img src="./images/programming.svg" class="about__icon" alt="">
-					<h3 class="about__tittle">Frontend Dev</h3>
-					<p>I like programming things from scratch and enjoy bringing ideas to life in the browser.</p>
-					<p class="melted">Languages I speak:</p>
-					<p>HTML,CSS,C,Rust, JS,C++</p>
-					<p class="melted">Dev Tools:</p>
-					<ul>
-						<li class="About__items">Nvim</li>
-						<li class="About__items">Terminal</li>
-						<li class="About__items">Github</li>
-						<li class="About__items">Tailwind</li>
-						<li class="About__items">Astro</li>
-						<li class="About__items">Docker/Kubernettes</li>
-					</ul>
-				</article>
+	<!--M E N U  S E C T I O N --> 
+  <div class="container-header ">
+  	<header>
+  		<div class="logo">
+  			<a href="#">Magray</a>
+  		</div>
+  		<nav id="nav" class="responsive">
+  		<div id="progress-bar"></div> <!--S C R O L L    B A R    P R O G R E S S I O N -->
+  			<ul>
+  				<li><a href="#Home"onclick="seleccionar()">HOME</a></li>
+  				<li><a href="#about-me" onclick="seleccionar()">ABOUT</a></li>
+  				<li><a href="#skrills" onclick="seleccionar()">SKILLS</a></li>
+  				<li><a href="#curriculum" onclick="seleccionar()">CURRICULM</a></li>
+  				<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+  				<li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+  				<li><a href="#Ask" onclick="seleccionar()">ASK QUESTION</a></li>
+  			</ul>
+  		</nav>
+  		<div class="nav-responsive" onclick="MostrarOcultarMenu()">
+  		    <i class="fa-solid fa-bars"></i>	
+  		</div>
+  	</header>
+  </div>
 
-				<article class="about__icons">
-					<img src="./images/music.svg" class="about__icon" alt="">
-					<h3 class="about__tittle">Musician</h3>
-					<p>One of my favourite hobbies is producing and creating music.</p>
-					<p class="melted">Instruments and Equipment:</p>
-					<p>Analogue synthesiser,Studio microphones,Audio mixer,Studio monitors,High fidelity headphones,MIDI keyboard</p>
-					<p class="melted">Musical Skills:</p>
-					<ul>
-						<li class="About__items">Songwriting</li>
-						<li class="About__items">Music production</li>
-						<li class="About__items">Rhythm programming</li>
-						<li class="About__items">Mixing and mastering</li>
-						<li class="About__items">Sound synthesis</li>
-					</ul>
-					<p class="melted">Software and Applications:</p>
-					<ul>
-						<li class="About__items">Pro Tools</li>
-						<li class="About__items">FL Studio</li>
-						<li class="About__items">Waves Plugins</li>
-					</ul>
-				</article>
-			</div>
-		</section>
+  <section class="prog-scroll"> 
+  <!--H O M E   S E C T I O N -->
+  <section id="Home" class="Home">
+  	<div class="baner-content">
+  		<div class="img-content">
+  			<img src="./images/grey.png " alt="Software Engineer">
+  		</div>
+  		<h1>Adrián Salvador Ekomo</h1>
+  		<h2>Software Engineer - Design and interface expert</h2>
+  		<div class="Network-media">
+  			<a href="https://github.com/MagreyTheCode"><i class="fa-brands fa-github"></i></a>
+  			<a href="https://www.instagram.com/whereismagray/"><i class="fa-brands fa-instagram"></i></a>
+  			<a href="https://www.linkedin.com/in/adri%C3%A1n-salvador-mesi-5990b8182/"><i class="fa-brands fa-linkedin"></i></a>
+  			<a href="https://www.twitch.tv/gray1400"><i class="fa-brands fa-twitch"></i></a>
+  			<a href="https://rss.app/myfeeds"><i class="fa-solid fa-rss"></i></a>
+  		</div>
+  	</div>
+  </section>
 
-		<section class="knowledge">
-			<div class="knowledge__container container ">
-				<div class="knowledge__texts">
-					<h2 class="subtitle">My Recent Work</h2>
-					<p class="knowledge__paragraph">Here are a few past design projects I've worked on. Want to see more? <b> <a href="mailto:larrymclarens@gmail.com" class="no__underline">Email me.</a> </b> </p>
-				</div>
-			</div>	
-		</section>
-		<section class="alldata-carousell">
-		<div class="container-carousel">
-			<div class="carousels" id="slider">
-				<section class="slider-section">
-					<img src="./images/Tan.jpeg" alt="">
-				</section>
-				<section class="slider-section">
-					<img src="./images/Ui.gif" alt="">
-				</section>
-				<section class="slider-section">
-					<img src="./images/zyro.png" alt="">
-				</section>
-			</div>
-			<div class="btn-left"><img src="./images/ArrowLeft.svg" alt=""></div>
-			<div class="btn-right"><img src="./images/ArrowRight.svg" alt=""></div>
-		</div>
-	   </section>
-	</main>
-<script src="./js/script.js"></script>
+  <!--A B O U T   M E   S E C T I O N -->
+  <section id="about-me" class="about-me">
+  	<div class="about-content">
+  		<h2>About Me</h2>
+  		<p><span>Hello There!, I'm Adrián </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero officia quos commodi perferendis dicta culpa obcaecati cum tempore. Sed soluta dolorum, temporibus illo maxime minus voluptate labore deleniti excepturi!.</p>
+  		<div class="row-about">
+  			<!--P E R S O N A L  D A T A -->
+  			<div class="col">
+  				<h3>Personal data</h3>
+  				<ul>
+  					<li>
+  						<strong>Birthday</strong>
+  						02-03-2003
+  					</li>
+  					<li><strong>Phone</strong>
+  						+216 56 181 520
+  					</li>
+  					<li><strong>Address</strong>
+  					    Ariana, Tunis
+  					</li>
+  					<li><strong>Job Tittle</strong>
+  						<span>FREELANCE</span>
+  					</li>
+  					<!-- 
+  					<li><strong>Webside</strong>
+  						 www.wxample@gmail.com
+  					</li> 
+  				    -->
+  				    <li>
+  					<strong><a href="mailto:larrymclarens@gmail.com" class="no_underline">Email me!</a></strong>
+  					</li>
+  				</ul>
+  			</div>
+  			<!--P E R S O N A L  I N T E R E T S -->
+  			<div class="col">
+  				<h3>Interets </h3>
+  				<div class="interets-container">
+  					<div class="interets">
+  						<i class="fa-solid fa-gamepad"></i>
+  						<span>GAMES</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-solid fa-book"></i>
+  						<span>READING</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-solid fa-music"></i>
+  						<span>MUSIC</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-sharp fa-solid fa-plane-departure"></i>
+  						<span>TRAVELS</span>
+  					</div>
+  					<div class="interets">
+  					    <i class="fa-solid fa-basketball"></i>
+  						<span>BASKETBALL</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-brands fa-linux"></i>
+  						<span>LINUX</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-solid fa-robot"></i>
+  						<span>IA/Robotic</span>
+  					</div>
+  					<div class="interets">
+  						<i class="fa-solid fa-camera"></i>
+  						<span>POTOGRAPHY</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<button onclick="descargarPDF()">
+  				Download CV <i class="fa-solid fa-file-arrow-down"></i>
+  				<a href="cv1.pdf" download="cv1.pdf"></a>
+
+  				<span class="overlay"></span>
+  			</button>
+  	</div>
+  </section>
+
+  <!--S K R I L L S   S E C T I O N-->
+  <section class="skrills" id="skrills">
+  	<div class="skrill-content">
+  		<h2>Skills</h2>
+  		<div class="row-skrill">
+  			<!--T E C H N I C A L   S K R I L LS-->
+  			<div class="col">
+  				<h3>Technical Skills</h3>
+  				<div class="skrill">
+  				  <span>JavaScript</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress javascript">
+  			    		<span>35%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>HTML & CSS</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress htmlcss">
+  			    		<span>30%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Photoshop</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress photoshop">
+  			    		<span>50%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Wordpress</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress wordpress">
+  			    		<span>15%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Tailwind</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress tailwind">
+  			    		<span>10%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			</div>
+  			<!--P R O F E S S I O N A L   S K R I L L S -->
+  			<div class="col">
+  				<h3>Professional Skills</h3>
+  				<div class="skrill">
+  				  <span>Communication</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress communication">
+  			    		<span>75%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Teamwork</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress teamwork">
+  			    		<span>70%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Creativity</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress creativity">
+  			    		<span>85%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Dedication</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress dedication">
+  			    		<span>60%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			    <div class="skrill">
+  				  <span>Proyect Management</span>
+  			      <div class="skrill-bar">
+  			    	<div class="progress ceo">
+  			    		<span>25%</span>
+  			        </div>
+  			      </div>
+  			    </div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  
+  <!--C U R R I C U L M  S E C T I O N-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Art and Multimedia</h4>
+                        <span class="House">Esprit High School Of Engineers</span>
+                        <span class="date-c">2022 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Art and Multimedia</h4>
+                        <span class="House">Esprit High School Of Engineers</span>
+                        <span class="date-c">2022 - 2026</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Art and Multimedia</h4>
+                        <span class="House">Esprit High School Of Engineers</span>
+                        <span class="date-c">2022 - 2026</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="House">Company name</span>
+                        <span class="date-c">2022 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="House">Company name</span>
+                        <span class="date-c">2022 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="House">Company name</span>
+                        <span class="date-c">2022 - 2025</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!--P O R T F O L I O  S E C T I O N-->
+<section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./images/Ui.gif" alt="">
+                    <div class="overlay">
+                        <h3>Frontend Dev</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/p1.gif" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/p3.gif" alt="">
+                    <div class="overlay">
+                        <h3>Backend Dev</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/p4.gif" alt="">
+                    <div class="overlay">
+                        <h3>Data Bases</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/p5.gif" alt="">
+                    <div class="overlay">
+                        <h3>Game Dev</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>WEB 3.0</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!--C O N T A C T   S E C T I O N  -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Email Adress">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="Ask" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Send Message<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./images/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ariana, Tunis 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Call me: +216 56 181 520
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: larrymclarens@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!--/*F O O T E R   S E C T I O N*/-->
+ <footer>
+        <a href="#Home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+  			<a href="#Github"><i class="fa-brands fa-github"></i></a>
+  			<a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+  			<a href="#Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+  			<a href="Twich"><i class="fa-brands fa-twitch"></i></a>
+  			<a href="Rss"><i class="fa-solid fa-rss"></i></a>
+  		</div>
+    </footer>
+
+
+
+</section>
+ <script src="./js/script.js"></script>
 </body>
 </html>

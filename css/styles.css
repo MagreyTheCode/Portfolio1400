@@ -79,7 +79,7 @@ align-items: center;
  max-width: 350px;
  margin: auto;
  text-align: center;
- border-radius: 40px; 
+ border-radius: 40px;
 }
 
 .Home .baner-content img{
@@ -89,6 +89,31 @@ align-items: center;
  width: 80%;
  margin: auto;
  border-radius: 100%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.Home .baner-content img{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    border: 10px solid transparent;
+    background-image: 
+    radial-gradient(circle at center, transparent,#1CB698,#dee2ff,#ff758f,#c9ada7);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite; 
 }
 
 .Home .baner-content h1{
@@ -696,6 +721,26 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+.creditos {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+}
+
+.creditos a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.creditos a:hover {
+    color: #1CB698;
+}
+
+
+
 
 
 /*R E S P O N S  I V E   S E C T I O N*/

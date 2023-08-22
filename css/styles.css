@@ -748,12 +748,18 @@ footer .arriba{
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
+    nav .progress-bar{
+        display: block;
+    }
+
     nav{
         display: none;
     }
     .nav-responsive{
         display: block;
     }
+
+
     nav.responsive{
         display: block;
         position: absolute;

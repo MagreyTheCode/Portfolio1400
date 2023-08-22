@@ -91,6 +91,46 @@ align-items: center;
  border-radius: 100%;
 }
 
+.Home .baner-content .img-content {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden; /* Aseguramos que el degradado no salga del contenedor */
+  animation: animateGradientBorder 3s infinite linear;
+}
+
+.Home .baner-content .img-content img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes animateGradientBorder {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Home .baner-content h1{
  margin-top: 40px;
  font-size: 28px;
